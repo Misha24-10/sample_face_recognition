@@ -1,7 +1,7 @@
 from cv2 import CascadeClassifier
 from mtcnn.mtcnn import MTCNN
 
-face_cascade = CascadeClassifier('../../resources/cascade/haarcascade_frontalface_default.xml')
+face_cascade = CascadeClassifier('C:/Work_space/sample_face_recognition/cascade/haarcascade_frontalface_default.xml') # добавить свой путь
 detector = MTCNN()  # Медленно работает TODO: выпилить
 
 

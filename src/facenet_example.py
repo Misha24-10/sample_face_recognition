@@ -21,7 +21,7 @@ scaller = StandardScaler()
 model = FaceNet().model
 detector = MTCNN() # Медленно работает TODO: выпилить
 face_cascade=cv2.CascadeClassifier('../cascade/haarcascade_frontalface_default.xml')
-dest_path = '../dataset/img_align_sorted_light'
+dest_path = '.../sample_face_recognition/images/database'
 
 def l2_normalize(x, axis=-1, epsilon=1e-10):
     output = x / np.sqrt(np.maximum(np.sum(np.square(x), axis=axis, keepdims=True), epsilon))
